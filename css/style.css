@@ -18,21 +18,39 @@ body {
   .navbar a:hover {
     color: black; }
 
-footer nav a, footer .p {
-  color: #ffff;
-  display: inline;
-  align-items: center;
-  font-size: 1.5rem;
-  text-decoration: none;
-  padding: 0.3rem; }
+footer {
+  background: red;
+  background: linear-gradient(90deg, #610101 0%, red 25%, red 75%, #610101 100%);
+  padding: 1rem;
+  padding-right: 3rem;
+  border-radius: none; }
+  footer nav a, footer b, footer .p {
+    color: #ffff;
+    display: inline;
+    align-items: center;
+    font-size: 1.5rem;
+    text-decoration: none;
+    padding: 0.3rem; }
+  @media only screen and (max-width: 768px) {
+    footer .ulfooter {
+      display: flex;
+      flex-direction: column;
+      justify-content: center; }
+    footer b {
+      display: none; } }
+
+.descrip {
+  margin-top: 1rem; }
 
 .nosotros {
   margin-top: 1rem;
   display: flex;
   font-size: 1.5rem;
-  margin-right: 0.9rem;
-  padding-left: 6rem;
-  padding-right: 6rem; }
+  margin-right: 0.5rem;
+  padding-left: 1rem;
+  padding-right: 1rem; }
+  .nosotros .textp {
+    padding: 1rem; }
   .nosotros h2 {
     background-color: black;
     color: #ffff;
@@ -40,6 +58,11 @@ footer nav a, footer .p {
     border-radius: 5px;
     display: inline-block;
     font-size: 2rem; }
+  @media only screen and (max-width: 768px) {
+    .nosotros {
+      display: flex;
+      flex-direction: column;
+      justify-content: center; } }
 
 .franja {
   background-color: black;
@@ -64,22 +87,21 @@ footer nav a, footer .p {
 
 .section {
   padding: 2rem;
-  padding-top: 2rem; }
+  padding-top: 2rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between; }
+  .section a {
+    padding: 1rem; }
   .section .icon {
     background-color: black;
-    border-radius: 1rem;
-    width: 14%;
-    height: 14%;
+    border-radius: 2rem;
     background-size: cover;
-    padding: 0.5rem;
-    margin: 1rem; }
-
-footer {
-  background: red;
-  background: linear-gradient(90deg, #610101 0%, red 25%, red 75%, #610101 100%);
-  padding: 1rem;
-  padding-right: 3rem;
-  border-radius: none; }
+    padding: 1rem; }
+  @media only screen and (max-width: 768px) {
+    .section {
+      display: flex;
+      justify-content: center; } }
 
 .imgf {
   height: 29rem;
@@ -118,6 +140,15 @@ footer {
     flex-direction: column;
     justify-content: center;
     line-height: 1.5rem; }
+  @media only screen and (max-width: 768px) {
+    .contacto {
+      display: flex;
+      flex-direction: column;
+      justify-content: center; }
+      .contacto iframe {
+        width: 100%; }
+      .contacto form {
+        width: 96%; } }
 
 .atras {
   background-color: black;
