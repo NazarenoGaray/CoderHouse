@@ -1,9 +1,11 @@
-body {
-  scrollbar-width: none;
+/* utilidades = variables */
+* {
   padding: 0%;
   margin: 0%;
   font-family: Arial, Helvetica, sans-serif; }
 
+/* base= reset, tipografias */
+/* view = codigo particionado de cada seccion o page/view */
 .navbar {
   width: 100%;
   background: red;
@@ -41,85 +43,6 @@ footer {
       justify-content: center; }
     footer b {
       display: none; } }
-
-.descrip {
-  margin-top: 1rem; }
-
-.nosotros {
-  margin-top: 1rem;
-  display: flex;
-  font-size: 1.5rem;
-  margin-right: 0.5rem;
-  padding-left: 1rem;
-  padding-right: 1rem; }
-  .nosotros .textp {
-    padding: 1rem; }
-  .nosotros h1, .nosotros h2 {
-    background-color: black;
-    color: #ffff;
-    padding: 0.5rem;
-    border-radius: 5px;
-    display: inline-block;
-    font-size: 2rem; }
-  @media only screen and (max-width: 768px) {
-    .nosotros {
-      display: flex;
-      flex-direction: column;
-      justify-content: center; } }
-
-.franja {
-  background-color: black;
-  height: 1rem; }
-
-.fondo__index {
-  background-image: url("../img/imgfondo.jpg");
-  height: 29rem;
-  background-size: cover;
-  padding: 1rem; }
-  .fondo__index .titulo {
-    width: 75%; }
-
-.ns {
-  background-color: black;
-  width: 100%;
-  color: #ffff;
-  padding: 0.5rem;
-  height: 3rem;
-  display: inline-block;
-  align-items: center;
-  font-size: 2rem;
-  margin: 0%; }
-
-.section {
-  padding: 2rem;
-  padding-top: 2rem;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between; }
-  .section a {
-    padding: 1rem; }
-  .section :hover {
-    padding: 1.5rem; }
-  .section .icon {
-    background-color: black;
-    border-radius: 2rem;
-    background-size: cover;
-    padding: 1rem; }
-  @media only screen and (max-width: 768px) {
-    .section {
-      display: flex;
-      justify-content: center; }
-      .section a:hover {
-        padding: 1rem; } }
-
-.imgf {
-  height: 29rem;
-  background-size: cover;
-  position: center; }
-
-.serv {
-  height: 29rem;
-  background-size: cover; }
 
 .contacto {
   display: flex;
@@ -159,6 +82,45 @@ footer {
       .contacto form {
         width: 96%; } }
 
+.nosotros {
+  margin-top: 1rem;
+  display: flex;
+  font-size: 1.5rem;
+  margin-right: 0.5rem;
+  padding-left: 1rem;
+  padding-right: 1rem; }
+  .nosotros .textp {
+    padding: 1rem; }
+  .nosotros h1, .nosotros h2 {
+    background-color: black;
+    color: #ffff;
+    padding: 0.5rem;
+    border-radius: 5px;
+    display: inline-block;
+    font-size: 2rem; }
+  @media only screen and (max-width: 768px) {
+    .nosotros {
+      display: flex;
+      flex-direction: column;
+      justify-content: center; } }
+
+.fondo__index {
+  background-image: url("../img/imgfondo.jpg");
+  height: 29rem;
+  background-size: cover;
+  padding: 1rem; }
+  .fondo__index .titulo {
+    width: 75%; }
+
+.imgf {
+  height: 29rem;
+  background-size: cover;
+  position: center; }
+
+.franja {
+  background-color: black;
+  height: 1rem; }
+
 .atras {
   background-color: black;
   color: #ffff;
@@ -171,3 +133,55 @@ footer {
 
 .btn-black:hover {
   color: white; }
+
+.serv {
+  height: 29rem;
+  background-size: cover; }
+
+.descrip {
+  margin-top: 1rem; }
+
+.section {
+  padding: 2rem;
+  padding-top: 2rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between; }
+  .section a {
+    padding: 1rem; }
+  .section :hover {
+    padding: 1.5rem; }
+  .section .icon {
+    background-color: black;
+    border-radius: 2rem;
+    background-size: cover;
+    padding: 1rem; }
+  @media only screen and (max-width: 768px) {
+    .section {
+      display: flex;
+      justify-content: center; }
+      .section a:hover {
+        padding: 1rem; } }
+  .section .atras {
+    background-color: black;
+    color: #ffff;
+    display: flex;
+    justify-content: space-between; }
+    .section .atras .mas {
+      color: #ffff;
+      text-decoration: none;
+      position: relative; }
+  .section .btn-black:hover {
+    color: white; }
+
+/* .ns{
+    background-color: $color_secundario;
+    width: 100%;
+    color: $color_letras1;
+    padding: 0.5rem;
+    height: 3rem;
+	display: inline-block;
+    align-items: center;
+    font-size: 2rem;
+    margin: 0%;
+} */

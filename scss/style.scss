@@ -1,201 +1,25 @@
-body{
-    scrollbar-width: none;
-    padding: 0%;
-    margin: 0%;
-    font-family: Arial, Helvetica, sans-serif;
-}
-.navbar{
-    width: 100%;
-    background: rgb(255,0,0);
-    background: linear-gradient(90deg, rgba(255,0,0,1) 2%, rgba(223,0,0,1) 25%, rgba(97,1,1,1) 93%);
-    img:hover{
-        height: 7rem;
-        width: 7rem;
-    }
-    a{
-        color: #ffff;
-        display: inline;
-        align-items: center;
-        font-size: 1.5rem;
-        text-decoration: none; 
-        padding: 0.3rem;
-    }:hover{
-        color: black;
-    }
-}
-footer{
-    background: rgb(255,0,0);
-    background: linear-gradient(90deg, rgba(97,1,1,1) 0%, rgba(255,0,0,1) 25%, rgba(255,0,0,1) 75%, rgba(97,1,1,1) 100%);
-    padding: 1rem;
-    padding-right: 3rem;
-    border-radius: none;
-    nav a,b,.p{
-        color: #ffff;
-        display: inline;
-        align-items: center;
-        font-size: 1.5rem;
-        text-decoration: none; 
-        padding: 0.3rem;
-    }
-    @media only screen and (max-width: 768px){
-        .ulfooter{
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-        }
-        b{
-            display: none;
-        }
 
-    }
-}
-.descrip{
-    margin-top: 1rem;
-}
-.nosotros{
-    margin-top: 1rem;
-    display: flex;
-    font-size: 1.5rem;
-    margin-right: 0.5rem;
-    padding-left: 1rem;
-    padding-right: 1rem;
-    .textp{
-        padding: 1rem;
-        
-    }
-    h1,h2{
-        background-color: black;
-        color: #ffff;
-        padding: 0.5rem;
-        border-radius: 5px;
-        display: inline-block;
-        font-size: 2rem;
-    }
-    @media only screen and (max-width: 768px){
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-    }
-}
-.franja{
-    background-color: black;
-    height: 1rem;
-}
-.fondo__index{
-    background-image: url("../img/imgfondo.jpg");
-    height: 29rem;
-    background-size: cover; 
-    padding: 1rem;
-    .titulo{
-        width: 75%;
-    }
-}
-.ns{
-    background-color: black;
+@import "utilities/variables";/* utilidades = variables */
+@import "base/reset";/* base= reset, tipografias */
+/* view = codigo particionado de cada seccion o page/view */
+@import "components/header";
+@import "components/footer";
+@import "components/contactos";
+@import "components/nosotros";
+@import "components/imagendondo";
+@import "components/elements";
+@import "components/section";
+
+/* .ns{
+    background-color: $color_secundario;
     width: 100%;
-    color: #ffff;
+    color: $color_letras1;
     padding: 0.5rem;
     height: 3rem;
 	display: inline-block;
     align-items: center;
     font-size: 2rem;
     margin: 0%;
-}
-.section{
-    padding: 2rem;
-    padding-top: 2rem;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    a{
-        padding: 1rem;
-    }:hover{
-        padding: 1.5rem;
+} */
 
-    }
-    .icon{
-        background-color: black;
-        border-radius: 2rem;
-        background-size: cover;
-        padding: 1rem;
-    }
-    @media only screen and (max-width: 768px){
-        display: flex;
-        justify-content: center;
-        a:hover{
-            padding: 1rem;
-            
-        }
-    }
-}
-.imgf{
-    height: 29rem;
-    background-size: cover;
-    position: center;
-}
-.serv{
-    height: 29rem;
-    background-size: cover; 
-}
-.contacto{
-    display: flex;
-    justify-content: center;
-    
-    iframe{
-        padding: 1rem;
-        width: 60%;
-        height: 42rem;
-        border-radius: 5px;
-        border-color: black;
-    }
-    hr{
-        border-color: rgb(255, 255, 255);
-        border-width: 0.2rem;
-        width: 100%;
-        border-style:double;
-    }
-    form{
-        color: #ffff;
-        background-color: rgb(0, 0, 0);
-        width: 40%;
-        height: 40rem;
-        border-radius: 10px;
-        margin-left: 25%;
-        margin: 15px 15px;
-        padding: 15px;
-        left: 350px;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        line-height: 1.5rem;
-    }
-    @media only screen and (max-width: 768px){
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        iframe{
-            width: 100%;
-        }
-        form{
-            width: 96%;
-        }
-    }
-}
-.atras{
-    background-color: black;
-    color: #ffff;
-    display: flex;
-    justify-content: space-between;
-    .mas{
-        color: #ffff;
-        text-decoration: none;
-        position: relative;
-    }
-}
-.btn-black:hover{
-    color: white;
-}
 
-@media only screen and (max-width: 776px){
-
-}

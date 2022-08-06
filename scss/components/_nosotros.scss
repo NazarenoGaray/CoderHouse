@@ -1,0 +1,25 @@
+.nosotros{
+    margin-top: 1rem;
+    display: flex;
+    font-size: 1.5rem;
+    margin-right: 0.5rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    .textp{
+        padding: 1rem;
+        
+    }
+    h1,h2{
+        background-color: $color_secundario;
+        color: $color_letras1;
+        padding: 0.5rem;
+        border-radius: 5px;
+        display: inline-block;
+        font-size: 2rem;
+    }
+    @media only screen and (max-width: 768px){
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+}

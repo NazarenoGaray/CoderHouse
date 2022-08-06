@@ -1,0 +1,40 @@
+.section{
+    padding: 2rem;
+    padding-top: 2rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    a{
+        padding: 1rem;
+    }:hover{
+        padding: 1.5rem;
+    }
+    .icon{
+        background-color: $color_secundario;
+        border-radius: 2rem;
+        background-size: cover;
+        padding: 1rem;
+    }
+    @media only screen and (max-width: 768px){
+        display: flex;
+        justify-content: center;
+        a:hover{
+            padding: 1rem;
+            
+        }
+    }.atras{
+    background-color: $color_secundario;
+    color: $color_letras1;
+    display: flex;
+    justify-content: space-between;
+    .mas{
+        color: $color_letras1;
+        text-decoration: none;
+        position: relative;
+    }
+    }
+    .btn-black:hover{
+        color: white;
+    } 
+    
+}

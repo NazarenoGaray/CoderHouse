@@ -1,0 +1,44 @@
+.contacto{
+    display: flex;
+    justify-content: center;
+    
+    iframe{
+        padding: 1rem;
+        width: 60%;
+        height: 42rem;
+        border-radius: 5px;
+        border-color: $color_secundario;
+    }
+    hr{
+        border-color: rgb(255, 255, 255);
+        border-width: 0.2rem;
+        width: 100%;
+        border-style:double;
+    }
+    form{
+        color: $color_letras1;
+        background-color: $color_secundario;
+        width: 40%;
+        height: 40rem;
+        border-radius: 10px;
+        margin-left: 25%;
+        margin: 15px 15px;
+        padding: 15px;
+        left: 350px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        line-height: 1.5rem;
+    }
+    @media only screen and (max-width: 768px){
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        iframe{
+            width: 100%;
+        }
+        form{
+            width: 96%;
+        }
+    }
+}

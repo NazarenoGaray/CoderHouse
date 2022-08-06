@@ -1,0 +1,19 @@
+.navbar{
+    width: 100%;
+    background: $color_principal;
+    background: $color_degrade_header;
+    img:hover{
+        height: 7rem;
+        width: 7rem;
+    }
+    a{
+        color: $color_letras1;
+        display: inline;
+        align-items: center;
+        font-size: 1.5rem;
+        text-decoration: none; 
+        padding: 0.3rem;
+    }:hover{
+        color: $color_secundario;
+    }
+}

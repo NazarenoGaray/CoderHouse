@@ -1,0 +1,25 @@
+.franja{
+    background-color: $color_secundario;
+    height: 1rem;
+}
+.atras{
+    background-color: $color_secundario;
+    color: $color_letras1;
+    display: flex;
+    justify-content: space-between;
+    .mas{
+        color: $color_letras1;
+        text-decoration: none;
+        position: relative;
+    }
+}
+.btn-black:hover{
+    color: white;
+}
+.serv{
+    height: 29rem;
+    background-size: cover; 
+}
+.descrip{
+    margin-top: 1rem;
+}
