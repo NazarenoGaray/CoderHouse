@@ -8,6 +8,9 @@ body {
   width: 100%;
   background: red;
   background: linear-gradient(90deg, red 2%, #df0000 25%, #610101 93%); }
+  .navbar img:hover {
+    height: 7rem;
+    width: 7rem; }
   .navbar a {
     color: #ffff;
     display: inline;
@@ -15,7 +18,7 @@ body {
     font-size: 1.5rem;
     text-decoration: none;
     padding: 0.3rem; }
-  .navbar a:hover {
+  .navbar :hover {
     color: black; }
 
 footer {
@@ -51,7 +54,7 @@ footer {
   padding-right: 1rem; }
   .nosotros .textp {
     padding: 1rem; }
-  .nosotros h2 {
+  .nosotros h1, .nosotros h2 {
     background-color: black;
     color: #ffff;
     padding: 0.5rem;
@@ -95,6 +98,8 @@ footer {
   justify-content: space-between; }
   .section a {
     padding: 1rem; }
+  .section :hover {
+    padding: 1.5rem; }
   .section .icon {
     background-color: black;
     border-radius: 2rem;
@@ -103,7 +108,9 @@ footer {
   @media only screen and (max-width: 768px) {
     .section {
       display: flex;
-      justify-content: center; } }
+      justify-content: center; }
+      .section a:hover {
+        padding: 1rem; } }
 
 .imgf {
   height: 29rem;

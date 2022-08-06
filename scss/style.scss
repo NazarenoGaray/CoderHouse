@@ -8,6 +8,10 @@ body{
     width: 100%;
     background: rgb(255,0,0);
     background: linear-gradient(90deg, rgba(255,0,0,1) 2%, rgba(223,0,0,1) 25%, rgba(97,1,1,1) 93%);
+    img:hover{
+        height: 7rem;
+        width: 7rem;
+    }
     a{
         color: #ffff;
         display: inline;
@@ -15,8 +19,7 @@ body{
         font-size: 1.5rem;
         text-decoration: none; 
         padding: 0.3rem;
-    }
-    a:hover{
+    }:hover{
         color: black;
     }
 }
@@ -60,7 +63,7 @@ footer{
         padding: 1rem;
         
     }
-    h2{
+    h1,h2{
         background-color: black;
         color: #ffff;
         padding: 0.5rem;
@@ -106,6 +109,9 @@ footer{
     justify-content: space-between;
     a{
         padding: 1rem;
+    }:hover{
+        padding: 1.5rem;
+
     }
     .icon{
         background-color: black;
@@ -116,6 +122,10 @@ footer{
     @media only screen and (max-width: 768px){
         display: flex;
         justify-content: center;
+        a:hover{
+            padding: 1rem;
+            
+        }
     }
 }
 .imgf{
