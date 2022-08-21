@@ -2,7 +2,10 @@
     width: 100%;
     background: $color_principal;
     background: $color_degrade_header;
-    img:hover{
+    img{
+        width:6rem; 
+        height:6rem;
+    }img:hover{
         height: 7rem;
         width: 7rem;
     }
